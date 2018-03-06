@@ -7,9 +7,13 @@ class Team {
 	String sectionName
 	String description
 	String shift
-	String teamLeader
+	TeamLeader teamLeader
 	String employee
 	String task
+
+	static hasMany=[tasks:Task, employees:Employee]
+
+	static belongsTo=[Shift]
 
     static constraints = {
 
@@ -20,7 +24,7 @@ class Team {
 	shift nullable:false, blank:false
 	teamLeader nullable:false, blank:false
 	employee nullable:false, blank:false
-	task nullable:false, blank:false
+	task nullable:true, blank:true
 	
     }
 }

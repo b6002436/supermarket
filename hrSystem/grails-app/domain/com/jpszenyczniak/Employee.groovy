@@ -10,11 +10,15 @@ class Employee {
 	Date dateEmployed
 	String taxCode
 	String contract
-	String manager
-	String teamleader
+	Manager manager
+	TeamLeader teamleader
 	String team
 	String task
-	String shift
+	Shift shift
+
+	static hasMany=[tasks:Task, teams:Team]
+
+	static belongsTo=[Team]
 
     static constraints = {
 
@@ -38,7 +42,7 @@ class Employee {
 
 	teamleader nullable:false, blank:false
 
-	team nullable:false, blank:false
+	team nullable:true, blank:true
 
 	task nullable:false, blank:false
 

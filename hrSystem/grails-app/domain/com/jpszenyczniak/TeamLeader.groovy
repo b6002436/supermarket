@@ -9,9 +9,11 @@ class TeamLeader {
 	int officePhone
 	String leaderEmail
 	String password
-	String manager
-	String team
+	Manager manager
+	Team team
 	String employee
+
+	static= hasMany=[employees:Employee]
 
     static constraints = {
 

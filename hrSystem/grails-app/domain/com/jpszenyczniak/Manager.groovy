@@ -11,6 +11,8 @@ class Manager {
 	String teamLeader
 	String employee
 
+	static hasMany=[employees:Employee, teamleaders:TeamLeader]
+
     static constraints = {
 
 	fullName nullable:false, blank:false
