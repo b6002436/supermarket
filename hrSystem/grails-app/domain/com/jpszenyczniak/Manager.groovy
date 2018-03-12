@@ -13,6 +13,10 @@ class Manager {
 
 	static hasMany=[employees:Employee, teamleaders:TeamLeader]
 
+	String toString(){
+	"$fullName, $office, $department"
+	}
+
     static constraints = {
 
 	fullName nullable:false, blank:false

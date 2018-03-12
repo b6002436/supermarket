@@ -13,7 +13,7 @@ class TeamLeader {
 	Team team
 	String employee
 
-	static= hasMany=[employees:Employee]
+	static hasMany=[employees:Employee]
 
     static constraints = {
 

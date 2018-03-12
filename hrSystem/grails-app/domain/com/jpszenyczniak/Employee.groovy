@@ -5,7 +5,7 @@ class Employee {
 	String fullName
 	Date dateOfBirth
 	String residence
-	String horlyRate
+	int horlyRate
 	String employeeID
 	Date dateEmployed
 	String taxCode
@@ -19,6 +19,11 @@ class Employee {
 	static hasMany=[tasks:Task, teams:Team]
 
 	static belongsTo=[Team]
+
+	
+	double calculatehorlyRate(){
+	20*horlyRate
+	}
 
     static constraints = {
 

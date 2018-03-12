@@ -11,8 +11,19 @@ class ManagerSpec extends Specification implements DomainUnitTest<Manager> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void mergeData() {
+
+when:" A manager has fullname, office, department."
+
+	def janet = new
+	Manager (
+	fullName:'Janet Smith',
+	office:'A3-000',
+	department:'Grocery'
+	)
+then:" the toString method will merge them." 
+
+janet.toString()=='Janet Smith, A3-000, Grocery'
+       
     }
 }

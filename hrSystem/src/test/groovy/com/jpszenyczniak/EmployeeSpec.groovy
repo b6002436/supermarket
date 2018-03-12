@@ -11,8 +11,12 @@ class EmployeeSpec extends Specification implements DomainUnitTest<Employee> {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void horlyRate() {
+
+	when: "A Employee has fullName and horlyRate"
+	def employee= new Employee(fullName:'Test1', horlyRate:7)
+	then:"The calculatehorlyRate method will total fees"
+	employee.calculatehorlyRate()==140
+       
     }
 }
