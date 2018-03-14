@@ -12,8 +12,6 @@ class Employee {
 	String contract
 	Manager manager
 	TeamLeader teamleader
-	String team
-	String task
 	Shift shift
 
 	static hasMany=[tasks:Task, teams:Team]
@@ -46,10 +44,6 @@ class Employee {
 	manager nullable:false, blank:false
 
 	teamleader nullable:false, blank:false
-
-	team nullable:true, blank:true
-
-	task nullable:false, blank:false
 
 	shift nullable:false, blank:false
     }

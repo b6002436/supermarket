@@ -8,8 +8,6 @@ class Manager {
 	String managerEmail
 	String office
 	String department
-	String teamLeader
-	String employee
 
 	static hasMany=[employees:Employee, teamleaders:TeamLeader]
 
@@ -31,8 +29,6 @@ class Manager {
 
 	department nullable:false, blank:false
 
-	teamLeader nullable:false, blank:false
-
-	employee nullable:false, blank:false
+	
     }
 }

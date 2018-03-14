@@ -14,9 +14,9 @@ class TeamLeaderSpec extends Specification implements DomainUnitTest<TeamLeader>
       void  validatingEmail() {
 
 	when:"Team Leader is created with fullName and email"
-	def teamleader1 = new TeamLeader(fullName:'teamleader1', email:'test@test.com')
+	def teamleader1 = new TeamLeader(fullName:'teamleader1', leaderEmail:'test')
 	then: 'Validation should fail'
-	teamleader1.validate()
+	!teamleader1.validate()
        
     }
 }

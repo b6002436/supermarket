@@ -9,9 +9,6 @@ class Task {
 	String timeRequired
 	String description
 	String taskCompleted
-	String shift
-	String team
-	String employee
 
 	static hasMany=[shifts:Shift, teams:Team, employees:Employee]
 
@@ -26,8 +23,5 @@ class Task {
 	timeRequired nullable:false, blank:false
 	description nullable:false, blank:false, widget:'textarea'
 	taskCompleted nullable:false, blank:false
-	shift nullable:false, blank:false
-	team nullable:true, blank:true
-	employee nullable:false, blank:false
     }
 }

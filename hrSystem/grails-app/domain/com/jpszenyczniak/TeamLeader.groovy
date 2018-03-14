@@ -11,7 +11,6 @@ class TeamLeader {
 	String password
 	Manager manager
 	Team team
-	String employee
 
 	static hasMany=[employees:Employee]
 
@@ -33,8 +32,7 @@ class TeamLeader {
 
 	manager nullable:false, blank:false
 
-	team nullable:false, blank:false
+	team nullable:true, blank:true
 
-	employee nullable:false, blank:false
     }
 }
