@@ -11,15 +11,6 @@
     <div id="content" role="main">
 	<div class="row">
 
-<div class="first"> 
-	<h3> Managers </h3> 
-<p> This is to show the managers. </p>
-
-	<button type="button" class="btn btn-success">
-
-	<g:link controller="course" action="create"> Add Manager</g:link> 
-
-	</button>
 
 </div> 
 
@@ -60,20 +51,9 @@
 
 </div> 
 
+
+
 <div class="first"> 
-	<h3> Task </h3> 
-<p> This is to show the Task </p>
-
-	<button type="button" class="btn btn-success">
-
-	<g:link controller="Task" action="create"> Add Task</g:link> 
-
-	</button>
-
-</div> 
-
-
-<div class="second"> 
 	<h3> Shifts </h3> 
 <p> This is to show the Shifts. </p>
 
