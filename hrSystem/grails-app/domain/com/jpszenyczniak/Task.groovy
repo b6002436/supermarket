@@ -14,6 +14,10 @@ class Task {
 
 	static belongsTo=[Team, Employee]
 
+	String toString(){
+	return taskName
+	}
+
     static constraints = {
 
 	taskName nullable:false, blank:false

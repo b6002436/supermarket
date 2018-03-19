@@ -8,9 +8,12 @@ class Team {
 	String description
 	TeamLeader teamLeader
 
-	static hasMany=[tasks:Task, employees:Employee]
+	static hasMany=[tasks:Task, employees:Employee, shifts:Shift]
 
-	static belongsTo=[Shift]
+	String toString(){
+	return teamName
+	}
+
 
     static constraints = {
 

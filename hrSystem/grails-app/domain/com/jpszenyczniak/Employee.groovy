@@ -18,7 +18,10 @@ class Employee {
 
 	static belongsTo=[Team]
 
-	
+	String toString(){
+	return fullName
+	}
+
 	double calculatehorlyRate(){
 	20*horlyRate
 	}

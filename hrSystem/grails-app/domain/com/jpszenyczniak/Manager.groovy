@@ -15,6 +15,8 @@ class Manager {
 	"$fullName, $office, $department"
 	}
 
+
+
     static constraints = {
 
 	fullName nullable:false, blank:false
