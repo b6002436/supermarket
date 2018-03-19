@@ -63,6 +63,26 @@
 
 	</button>
 
+
+
+
+<div class="second">
+
+	<h3> Advanced Search Employees</h3>
+
+	<p>Lorem Ipsum hi hi hi hi hi hi hi hi hi hi hi </p> 
+
+		<button type="button" class="btn btn-success"> 
+
+			<g:link controller="Employee" action="advSearch">Search</g:link>
+
+		</button>
+
+
+
+</div>
+
+
 </div> 
 
 </div>
