@@ -11,7 +11,7 @@
         <section class="row colset-2-its">
             <h1>Welcome to the Supermarket</h1>
 
-    < div class="row">
+    <div class="row">
 	<asset:image src="banner2.jpg"/>
     </div>
 

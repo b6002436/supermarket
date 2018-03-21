@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Manager Login</title>
+    <title>Team Leader Login</title>
 </head>
 <body>
 
@@ -21,10 +21,10 @@
 <table>
         <tr class="prop">
           <td class="name">
-            <label for="username">User Name:</label>
+            <label for="leaderEmail">Email:</label>
           </td>
           <td class="value">
-            <input type="text" id="username" name="username" value="">
+            <input type="text" id="leaderEmail" name="leaderEmail" value="">
           </td></tr>
         <tr class="prop">
           <td class="name">
@@ -35,7 +35,7 @@
           </td></tr>
         <tr><td></td>
           <td>
-            <input type="submit" value="login"/>
+            <input type="submit" value="TLlogin"/>
           </td></tr>
       </table>
     </g:form>
