@@ -35,17 +35,23 @@ return [tasks: tasks]
 
 }
 
+def index(Task task) 
+
+{ 
+render Task.list()as JSON
+} 
+
 def show(Task task)
 	{
 
 		if(params.id && Task.exists(params.id)){
 
-		render Task.findByTaskName(params.id) as XML
+		render Task.findById(params.id) as JSON
 	}
 
 	else{
 
-		render Task.list() as XML
+		render Task.list() as JSON
 
 
 	}

@@ -31,7 +31,7 @@ else{
 
 	out<<"<a href='${createLink(controller:'manager',action:'login')}'>" 
 
-	out<<"Login</a></span>"
+	out<<"Manager Login</a></span>"
 
 }
 
@@ -63,7 +63,7 @@ else{
 
 	out<<"<a href='${createLink(controller:'TeamLeader',action:'loginTL')}'>" 
 
-	out<<"Login</a></span>"
+	out<<"Team Leader Login</a></span>"
 
 }
 

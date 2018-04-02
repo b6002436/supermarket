@@ -33,7 +33,7 @@
 
 	<button type="button" class="btn btn-success">
 
-	<g:link controller="Employee" action="show"> Show Employees</g:link> 
+	<g:link controller="Employee" action="index"> Show Employees</g:link> 
 
 	</button>
 
@@ -45,7 +45,7 @@
 
 	<button type="button" class="btn btn-success">
 
-	<g:link controller="Team" action="show"> Show Team</g:link> 
+	<g:link controller="Team" action="index"> Show Team</g:link> 
 
 	</button>
 
@@ -59,11 +59,11 @@
 
 	<button type="button" class="btn btn-success">
 
-	<g:link controller="Task" action="show"> Show Tasks</g:link> 
+	<g:link controller="Task" action="index"> Show Tasks</g:link> 
 
 	</button>
 
-
+</div> 
 
 
 <div class="second">
@@ -77,9 +77,32 @@
 			<g:link controller="Task" action="advSearchTL">Search</g:link>
 
 		</button>
+</div>
 
 
+<div class="first">
+<h3> Tasks as JSON objects (Show action) </h3> 
+<p> This is to show Tasks as JSON objects. </p>
 
+	<button type="button" class="btn btn-success">
+
+	<g:link controller="Task" action="show"> Show Tasks</g:link> 
+
+	</button>
+
+</div> 
+
+<div class="second">
+<h3> Tasks as JSON objects( Index Action)</h3> 
+<p> This is to show Tasks as JSON objects. </p>
+
+	<button type="button" class="btn btn-success">
+
+	<g:link controller="Task" action="index"> Show Tasks</g:link> 
+
+	</button>
+
+	
 </div>
 
 
