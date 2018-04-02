@@ -59,7 +59,7 @@
 
 	<button type="button" class="btn btn-success">
 
-	<g:link controller="Shift" action="show"> Show Tasks</g:link> 
+	<g:link controller="Task" action="show"> Show Tasks</g:link> 
 
 	</button>
 

@@ -37,5 +37,7 @@ def logout = {
 	redirect(uri:'/')
 
 }
+
+
 }
 

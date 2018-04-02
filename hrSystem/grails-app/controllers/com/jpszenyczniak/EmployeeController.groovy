@@ -1,6 +1,10 @@
 package com.jpszenyczniak
 
+import grails.converters.*
+
 class EmployeeController {
+
+static allowedMethods = [index: "GET", show:"GET"]
 
     def scaffold = Employee
 
@@ -48,5 +52,22 @@ return [employees: employees]
 
 }
 
-}
+
+	
+	def show(Employee employee)
+	{
+
+		if(params.id && Employee.exists(params.id)){
+
+		render Employee.findByFullName(params.id) as XML
+	}
+
+	else{
+
+		render Employee.list() as XML
+
+
+	}
+	}
+	}
 
